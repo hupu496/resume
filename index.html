@@ -1,878 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Aadarsh</title>
 
-    <!-- bootstrap css cdn link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css" />
+  <title>Abhinav Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
-    <!-- bootstrap icon cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Portfolio</a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li> -->
-          </ul>
-        </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.0.1
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+  article#node-13 a.title { display: none; }
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu" >
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <!-- <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Skill</span></a></li> -->
+
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>  
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Skill</span></a></li>
+
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Abhinav Roy</h1>
+      <p>I'm <span class="typed" data-typed-items="Software Engineer, Freelancer, Photographer"></span></p>
+      <div class="social-links">
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+        <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+        <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+        <a href="https://www.linkedin.com/in/abhinav-roy-980020157/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Drake0306" target="_blank" class="google-plus"><i class="bx bxl-git"></i></a>
       </div>
-    </nav>
-    <!-- navbar ends here -->
+    </div>
+  </section><!-- End Hero -->
 
-    <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Aadarsh</span>
-          </h2>
-          <p class="text-muted">
-            I'm A Web Developer(CI/LARAVAL) having 2 years of experience in expertise of
-            creating web Application with fully responsive Also with backend part too.
-          </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
-          </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
-        </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/aadarsh_profile.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </section>
-    <!-- home section ends here -->
+  <main id="main">
 
-    <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service">
-      <div class="heading text-center">
-        <small>My Expertise</small>
-        <h3>
-          Provide Wide Range of <br />
-          Digital Services
-        </h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Design</h4>
-              <p class="text-muted">
-                Web design as a developer involves understanding and implementing visual and functional aspects of a website to ensure a seamless user experience. Developers, while traditionally focused on coding and functionality, often overlap with design aspects to create user-friendly and visually appealing web applications.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>All the projects that i have worked on till now.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <!-- <li data-filter=".filter-card">Card</li> -->
+              <li data-filter=".filter-web">Web</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Development</h4>
-              <p class="text-muted">
-               Web development as a developer involves creating and maintaining websites and web applications. It encompasses both the frontend (user interface) and backend (server and database management) aspects of web technology, requiring a combination of technical skills and creativity to deliver functional, scalable, and user-friendly digital solutions.
 
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon3.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Debugging</h4>
-              <p class="text-muted">
-                Debugging is a critical process in development, aimed at identifying, analyzing, and fixing errors in code or functionality. An effective debugging process not only resolves issues but also prevents similar ones in the future. Here's an in-depth look at the debugging process for developers.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- expertise section ends here -->
-
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/logistica.gif" style="height: 220px;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Logisticsa  </h4>
+                <p>Web Software</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/logistica.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                      title=""><i class="bx bx-plus"></i></a> 
+                  <a href="logistica-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
-                <br />
-                <span class="text">HTML & CSS</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">Django</span>
               </div>
             </div>
           </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">PHP</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
-                </div>
-                <br>
-                <span class="text">ReactJS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Beautiful & Unique Digital Experiences</h3>
-            <p class="text-muted">
-              Creating beautiful and unique digital experiences involves combining design principles with technical expertise across various technologies like HTML, CSS, JavaScript, PHP, Django, and ReactJS. Here's how each technology contributes and strategies to craft standout digital experiences.
-            </p>
-            <p class="text-muted">
-              HTML provides the foundation of a web page's structure, ensuring accessibility and SEO-friendly content.
-            </p>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <!-- here download attribute is used for adding download functionality to button  -->
-              <a
-                href="Entry Level Web Developer Resume.pdf"
-                download="SampleCV"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- skill section end here -->
 
-    <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
-      </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <!-- <button class="filter-item" data-filter="game">We</button> -->
-        <button class="filter-item" data-filter="webapp">Web App</button>
-        <button class="filter-item" data-filter="website">Website</button>
-       
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/currency-converter.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Converter App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Website</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/gate.gif" style="height: 220px;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Gate Pass Verson 1</h4>
+                <p>Web Software</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/gate.gif" data-gallery="portfolioGallery" class="portfolio-lightbox"  title=""><i class="bx bx-plus"></i></a>
+                  <a href="gate-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/dictionary.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Dictionary</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/piceditor.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">PicEditor App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">App</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/tictactoe.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">TicTacToe Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/lang-translator.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Lang Translator</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio section ends here -->
-
-    <!-- testimonial section starts  -->
-    <!-- <section class="testimonial mt-5 pt-5" id="testimonial">
-      <div class="row justify-content-evenly">
-        <div class="col-md-4 col-10" data-aos="slide-right">
-          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-          <div class="heading">
-            <small>Testimonials</small>
-            <h3>Happy Clients Feedback</h3>
           
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
-                    </div>
-                  </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/payroll.gif" style="height: 220px;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PayRoll</h4>
+                <p>Web Software</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/payroll.gif" data-gallery="portfolioGallery" class="portfolio-lightbox"  title=""><i class="bx bx-plus"></i></a>
+                  <a href="payroll-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
-              <button
-                class="nextprev-btn rounded-pill prev-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <i class="bi bi-arrow-left-circle-fill prev"></i>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="nextprev-btn rounded-pill next-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <i class="bi bi-arrow-right-circle-fill next"></i>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- testimonial ends here -->
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/p4/Capture.PNG" style="height: 220px;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PayRoll</h4>
+                <p>Ecommerce Demo</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/p4/Capture.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox"  title=""><i class="bx bx-plus"></i></a>
+                  <a href="ecommerce-demo-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- blog section starts -->
-   <!--  <section class="blog mt-5 pb-5" id="blog">
-      <div class="heading text-center pt-5">
-        <small>Latest News</small>
-        <h3>Blog & Articles</h3>
-      </div>
-      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
-        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
-          <div class="card">
-            <img
-              src="images/2048game.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
-            </div>
-          </div>
         </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
-          <div class="card">
-            <img
-              src="images/currency-converter.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
-          <div class="card">
-            <img
-              src="images/dictionary.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!-- here we will make modals if Read more link is clicked the modal will popup -->
-       <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/2048game.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/currency-converter.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/dictionary.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- blog section ends here -->
 
-    <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
       </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>Behind of R.N.A.R College Moh:Shrikrishnapuri west samastipur, bihar-848101</p>
-            </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about mt-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skill</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <!-- <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div> -->
+          <div class="col-lg-2">
+            <!-- <img src="assets/img/profile-img.jpg" class="img-fluid" alt=""> -->
           </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
+          <div class="col-lg-10 pt-4 pt-lg-0 content">
+            <!-- <h3 class="mt-3" >Skills</h3> -->
+            <p class="font-italic">
+              
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>Python, Django, Rest Framework</strong> </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PHP, Laravel</strong> </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>My SQL, SQLite</strong> </li>
+                  
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>HTML, CSS, JavaScript</strong> </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Bootstrap, React</strong> </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Android Web Apps( Android Studio )</strong> </li>
+                  
+                </ul>
+              </div>
             </div>
-            <div class="col-11">
-              <p>+91 7999669691</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>aadarsh629@gmail.com</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-              <p>https://hupu496.github.io/techsparrow/</p>
-            </div>
+            <p>
+              
+            </p>
           </div>
         </div>
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-          <div class="contact-form">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Mobile No."
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                placeholder="Message"
-                rows="5"
-              ></textarea>
-            </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              Submit
-            </button>
-          </div>
-        </div>
+
       </div>
     </section>
-    <!-- contact section ends here -->
 
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
+    <!-- ======= Skills Section ======= -->
+    <!-- <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+      
+          <div class="section-title">
+            <h2>Skills</h2>
+            <p></p>
+          </div>
 
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
-        <a href="#home">Home</a>
-        <div class="vr"></div>
-        <a href="#about">About</a>
-        <div class="vr"></div>
-        <a href="#service">Service</a>
-        <div class="vr"></div>
-        <a href="#portfolio">Portfolio</a>
-        <div class="vr"></div>
-      <!--   <a href="#blog">Blog</a>
-        <div class="vr"></div> -->
-        <a href="#contact">Contact</a>
+          <div class="row skills-content">
+
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-5">
+              <div class="section-title">
+                <ul class="list-unstyled" style="text-align: left;letter-spacing: 1px;">
+                  <ul>
+                    <li><p>Python, Django, Rest Framework</p></li>
+                    <li><p>PHP, Laravel</p></li>
+                    <li><p>My SQL, SQLite</p></li>
+                  </ul>
+              </ul>
+              <ul class="list-unstyled" style="text-align: left;letter-spacing: 1px;">
+                <ul>
+                  <li><p>HTML, CSS, JavaScript</p></li>
+                  <li><p>Bootstrap, React</p></li>
+                  <li><p>Android Web Apps ( Android Studio )</p></li>
+                </ul>
+            </ul>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="section-title">
+                
+              </div>
+            </div>
+
+        </div>
+
+      </div> -->
+    <!-- </section>End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume mt-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Abhinav Roy</h4>
+              <p><em>Around 1 and half years experience in Managing / Updating / Maintaining Web applications in Linux and Windows environment . Deploying Mostly on web Linux server and localhost According to the requirements</em></p>
+              <ul>
+                <li>Jharkhand, IN</li>
+                <li>(+91) 79038-26151</li>
+                <li>abhinavroy.hello@gmail.com</li>
+                <li> <a target="_blank" href="https://www.linkedin.com/in/abhinav-roy-980020157/">linkedin @abhinav-roy-980020157</a> </li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>bachelor in computer application ( BCA )</h4>
+              <!-- <h5>2015 - 2016</h5> -->
+              <p><em>Trident Academy Of Technology, BBSR, OD, IN</em></p>
+              <p>Bachelor Degree</p>
+            </div>
+            <div class="resume-item">
+              <h4>Intermediate</h4>
+              <!-- <h5>2010 - 2014</h5> -->
+              <p><em>Sant Nandlal Smriti Vidya Mandir, GTS, IN</em></p>
+              <p>Intermediate Course</p>
+            </div>
+            
+            <h3 class="resume-title">Download Resume</h3>
+            <div class="resume-item">
+              <p> <a href="./assets/files/Black Professional Resume_5.pdf"> <b> DOWNLOAD</b> </a> </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>SOFTWARE ENGINEER</h4>
+              <h5>2019 - Present</h5>
+              <p><em>COMSYS IT, Delhi, IN </em></p>
+              <ul>
+                <li>Building API and integrating it in web applications. Mostly worked on <b>Rest Framework / Django / Python.</b> </li>
+                <li>Optimize Code and DB. query in order for fast data
+                  loading.</li>
+                <li>For Front end React using Material UI.</li>
+                <li>Monitoring and eliminating all bugs and performance
+                  bottlenecks that come while Development and after it.</li>
+                <li>Worked on development for live price of products and
+                  calculation in the software for multiple clients.</li>
+                <li>Worked developing inventory System with multiple branch login and stock control with maintains organizer for their vehicles <b>(Django, Rest Framework, Vue, MY SQL)</b> </li>
+                <li>Worked on Developing Gate pass system With QR
+                  Scanner and Photo Snapping/logging records of All
+                  people entry and exit <b>(Laravel, Bootstrap, MY SQL)</b>
+                  </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>BACKEND WEB DEVELOPER</h4>
+              <h5>2019</h5>
+              <p><em>IT SCIENT, Jamshedpur, IN</em></p>
+              <ul>
+                <li>Writing DB Data base query for multiple projects.</li>
+                <li>Worked on integrating Laravel Backed With Front end design.</li>
+                <li>Worked on Multiple Location user login Software.</li>
+                <li>Worked on Developing interview scheduling And bug fixing on Recruit management System <br><b>(Laravel, MY SQL).</b>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="social-links mt-5" data-aos="fade-up">
-        <button href="" class="rounded-pill dribble">
-          <i class="bi bi-dribbble"></i>
-        </button>
-        <button href="" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i>
-        </button>
-        <button href="" class="rounded-pill behance">
-          <i class="bi bi-behance"></i>
-        </button>
-      </div>
-      <hr class="text-muted my-4" />
+    </section><!-- End Resume Section -->
 
-      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
-    </footer>
-    <!-- footer section ends here -->
-
-      <!-- bootstrap javascript cdn link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- AOS library javascript link  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      // initializing AOS library
-      AOS.init({
-        duration: 1000,
-        offset: 50,
-      });
-    </script>
-    <!-- custom js file linking -->
-    <script src="js/script.js"></script>
     
-  </body>
+
+    <!-- ======= Services Section ======= -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact mt-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Jharkhand, IN</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>abhinavroy.hello@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 79038-26151</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Abhinav Roy</h3>
+      <p>Feel free to contact through the above form. or the mobile number</p>
+      <div class="social-links">
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+        <a  target="_blank"  href="https://www.linkedin.com/in/abhinav-roy-980020157/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Drake0306" target="_blank" class="git"><i class="bx bxl-git"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>MyPortfolio</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+</body>
+
 </html>
